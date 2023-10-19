@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class Candy1 : MonoBehaviour
 {
@@ -29,10 +30,17 @@ public class Candy1 : MonoBehaviour
         RandomSpawn = Random.Range(0, 10);
         
     }
+    public Text valueText;
+
+    
+
+    
 
     // Update is called once per frame
     void Update()
     {
+        
+
         TimeLeft -= Time.deltaTime;
         
         if (TimeLeft < RandomSpawn)
@@ -70,4 +78,6 @@ public class Candy1 : MonoBehaviour
             }
         }
     }
+
+    
 }
