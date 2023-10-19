@@ -54,27 +54,32 @@ public class Candy1 : MonoBehaviour
             if (RandomCandySpawn == 1 )
             {
                 Rigidbody2D currentProj = Instantiate(CandyA, Spawn.position, Quaternion.identity);
+                Destroy(currentProj.gameObject, 4);
             }
             if (RandomCandySpawn == 2)
             {
                 Rigidbody2D currentProj = Instantiate(CandyB, Spawn.position, Quaternion.identity);
-
+                Destroy(currentProj.gameObject, 4);
             }
             if (RandomCandySpawn == 3)
             {
                 Rigidbody2D currentProj = Instantiate(CandyC, Spawn.position, Quaternion.identity);
+                Destroy(currentProj.gameObject, 4);
             }
             if (RandomCandySpawn == 4)
             {
                 Rigidbody2D currentProj = Instantiate(CandyD, Spawn.position, Quaternion.identity);
+                Destroy(currentProj.gameObject, 4);
             }
             if (RandomCandySpawn == 5)
             {
                 Rigidbody2D currentProj = Instantiate(CandyE, Spawn.position, Quaternion.identity);
+                Destroy(currentProj.gameObject, 4);
             }
             if (RandomCandySpawn == 6)
             {
                 Rigidbody2D currentProj = Instantiate(CandyF, Spawn.position, Quaternion.identity);
+                Destroy(currentProj.gameObject, 4);
             }
         }
     }
